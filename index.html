@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>App del Clima - Retos</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img
+            src="img/descargar (1).jpg"
+            alt="Banner de la App del Clima"
+            class="banner"
+        >
+
+        <h1>🌤️ App del Clima</h1>
+
+        <p>
+            Consulta el clima en tiempo real de cualquier ciudad
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- BUSCADOR -->
+
+        <form id="formulario" class="buscador">
+
+            <input
+                type="text"
+                id="inputCiudad"
+                placeholder="Escribe una ciudad..."
+                required
+            >
+
+            <button type="submit">
+                🔍 Consultar
+            </button>
+
+        </form>
+
+
+        <!-- RETO 1: GEOLOCALIZACIÓN -->
+
+        <button
+            type="button"
+            id="btnUbicacion"
+        >
+            📍 Mi ubicación
+        </button>
+
+
+        <!-- RETO 4: MODO CLARO / OSCURO -->
+
+        <button
+            type="button"
+            id="btnTema"
+        >
+            ☀️ Modo claro
+        </button>
+
+
+        <!-- RETO 3: HISTORIAL -->
+
+        <div
+            id="historial"
+            class="historial"
+        ></div>
+
+
+        <!-- RESULTADO DEL CLIMA -->
+
+        <div
+            id="resultado"
+            class="resultado"
+        ></div>
+
+
+        <!-- RETO 2: PRONÓSTICO -->
+
+        <div
+            id="pronostico"
+            class="pronostico"
+        ></div>
+
+
+        <!-- RETO 5: WHATSAPP -->
+
+        <button
+            type="button"
+            id="btnWhatsApp"
+            class="btn-whatsapp"
+            style="display:none;"
+        >
+            📱 Compartir en WhatsApp
+        </button>
+
+
+        <p id="estado"></p>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 - App del Clima
+        </p>
+
+        <p>
+            HTML5 | CSS3 | JavaScript | API
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
